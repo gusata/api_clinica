@@ -14,7 +14,7 @@ class PatientController extends Controller //CRUD
      */
     public function index() // vai retornar todos os pacientes
     {
-        return response()->json(patient::all(),200);
+        return Patient::all();
     }
 
     /**
